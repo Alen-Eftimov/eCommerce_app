@@ -1,8 +1,3 @@
-/* eslint-disable prettier/prettier */
-
-/* eslint-disable prettier/prettier */
-
-
 export default {
   id: '5',
   title: 'Logitech MX Master 3 Advanced Wireless Mouse for Mac - Bluetooth/USB',
