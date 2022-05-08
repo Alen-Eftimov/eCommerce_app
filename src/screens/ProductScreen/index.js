@@ -3,6 +3,7 @@ import { View, Text } from 'react-native';
 import {Picker} from '@react-native-picker/picker';
 import styles from './styles';
 import QuantitySelector from '../../components/QuantitySelector';
+import Button from '../../components/Button';
 import product from '../../data/product';
 
 
@@ -37,7 +38,8 @@ const ProductScreen = () => {
             {/* Quantity Selector */}
             <QuantitySelector quantity={quantity} setQuantity={setQuantity} />
             {/* Buttons */}
-
+            <Button text={'Add to Cart'} onPress={() => {console.warn('Add to cart');}} />
+            <Button text={'Buy Now'} onPress={() => {console.warn('Buy Now');}} />
         </View>
     );
 };
