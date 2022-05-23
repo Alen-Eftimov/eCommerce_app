@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import { Text, ScrollView } from 'react-native';
+import { View, Text, ScrollView } from 'react-native';
 import {Picker} from '@react-native-picker/picker';
 import styles from './styles';
 import QuantitySelector from '../../components/QuantitySelector';
@@ -41,20 +41,22 @@ const ProductScreen = () => {
             {/* Quantity Selector */}
             <QuantitySelector quantity={quantity} setQuantity={setQuantity} />
             {/* Buttons */}
-            <Button
-             text={'Add to Cart'}
-             onPress={() => {
-                 console.warn('Add to cart');
-             }}
-            // eslint-disable-next-line react-native/no-inline-styles
-            containerStyles={{ backgroundColor: '#e3c905' }}
-            />
-            <Button
-             text={'Buy Now'}
-             onPress={() => {
-                 console.warn('Buy Now');
+            <View style={{ marginBottom: 20}}>
+                <Button
+                text={'Add to Cart'}
+                onPress={() => {
+                    console.warn('Add to cart');
                 }}
-            />
+                // eslint-disable-next-line react-native/no-inline-styles
+                containerStyles={{ backgroundColor: '#e3c905' }}
+                />
+                <Button              
+                text={'Buy Now'}
+                onPress={() => {
+                    console.warn('Buy Now');
+                    }}
+                />
+            </View>
         </ScrollView>
     );
 };

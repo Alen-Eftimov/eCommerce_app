@@ -38,8 +38,8 @@ export default [
       title: 'Mouse Havit Mechanical Keyboard Wired 89 Keys Gaming Keyboard',
       image:
         'https://notjustdev-dummy.s3.us-east-2.amazonaws.com/images/products/mouse2.jpg',
-      avgRating: 4.8,
-      ratings: 2989,
+      avgRating: 3.8,
+      ratings: 3989,
       price: 99.98,
       oldPrice: 120.06,
     },
