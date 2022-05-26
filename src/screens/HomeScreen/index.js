@@ -4,7 +4,8 @@ import ProductItem from '../../components/ProductItem';
 
 import products from '../../data/products';
 
-const HomeScreen = () => {
+const HomeScreen = ({searchValue}) => {
+  console.log(searchValue);
   return (
     <View style={styles.page}>
       {/* Render Product Component */}
